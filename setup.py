@@ -1,5 +1,4 @@
 import setuptools
-import os
 import importlib
 
 requires = """
@@ -31,23 +30,22 @@ def get_requirements():
 
 with open('README.md', 'r') as f:
     setuptools.setup(
-        name = 'openprompt',
+        name = 'openprompt-updated',
         version = '1.0.1',
-        description = "An open source framework for prompt-learning.",
+        description = "An open source framework for prompt-learning, patched to work with newer versions of Python",
         long_description=open("README.md", "r", encoding="utf-8").read(),
         long_description_content_type="text/markdown",
         author = 'Ning Ding, Shengding Hu, Weilin Zhao, Yulin Chen',
         author_email = 'dingn18@mails.tsinghua.edu.cn',
         license="Apache",
-        url="https://github.com/thunlp/OpenPrompt",
+        url="https://github.com/9p4/OpenPrompt-updated",
         keywords = ['PLM', 'prompt', 'AI', 'NLP'],
-        python_requires=">=3.6.0",
+        python_requires=">=3.11.0",
         install_requires=get_requirements(),
         packages=setuptools.find_packages(),
         classifiers=[
             "Programming Language :: Python :: 3",
-            "Programming Language :: Python :: 3.8",
-            "Programming Language :: Python :: 3.9",
+            "Programming Language :: Python :: 3.11",
             "Intended Audience :: Developers",
             "Intended Audience :: Education",
             "Intended Audience :: Science/Research",
